@@ -1,0 +1,60 @@
+{
+    "name": "\u79d1\u66fc Common",
+    "movies": [
+        "\u75be\u901f\u7279\u653b John Wick: Chapter 2",
+        "\u901a\u7f09\u4ee4 Wanted"
+    ],
+    "male": "\u7537",
+    "xingzuo": "\u53cc\u9c7c\u5ea7",
+    "birth": "1972-03-13",
+    "area": "\u7f8e\u56fd,\u4f0a\u5229\u8bfa\u4f0a\u5dde,\u829d\u52a0\u54e5",
+    "zhiye": [
+        "\u6f14\u5458",
+        "\u914d\u97f3"
+    ],
+    "moreName": [],
+    "family": [],
+    "intro": "\n            \u3000\u3000\n    ",
+    "hezuo": [
+        [
+            "\u4f0a\u6069\u00b7\u9ea6\u67ef\u8096\u6069 Ian McShane",
+            1
+        ],
+        [
+            "\u91cc\u5361\u591a\u00b7\u65af\u5361\u9a6c\u4e54 Riccardo Scamarcio",
+            1
+        ],
+        [
+            "\u5170\u65af\u00b7\u83b1\u8fea\u514b Lance Reddick",
+            1
+        ],
+        [
+            "\u5927\u536b\u00b7\u5965\u54c8\u62c9 David O'Hara",
+            1
+        ],
+        [
+            "\u6258\u62dc\u5384\u65af\u00b7\u897f\u683c\u5c14 Tobias Segal",
+            1
+        ],
+        [
+            "\u9a6c\u514b\u00b7\u6c83\u4f26 Marc Warren",
+            1
+        ],
+        [
+            "\u7279\u4f26\u65af\u00b7\u65af\u5766\u666e Terence Stamp",
+            1
+        ],
+        [
+            "\u52b3\u4f26\u65af\u00b7\u83f2\u4ec0\u4f2f\u6069 Laurence Fishburne",
+            1
+        ],
+        [
+            "\u7ea6\u7ff0\u00b7\u96f7\u5409\u624e\u83ab John Leguizamo",
+            1
+        ],
+        [
+            "\u5b89\u5409\u4e3d\u5a1c\u00b7\u6731\u8389 Angelina Jolie",
+            1
+        ]
+    ]
+}

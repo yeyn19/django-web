@@ -1,0 +1,78 @@
+{% load static %}
+{% load my_tags %}
+
+
+<html>
+
+    <meta charset="utf-8">
+
+    <head>
+        <title>Hoogle.com</title>
+        <!-- Meta tag Keywords -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8" />
+        <meta name="keywords" content=""
+        />
+        <script>
+            addEventListener("load", function () {
+                setTimeout(hideURLbar, 0);
+            }, false);
+    
+            function hideURLbar() {
+                window.scrollTo(0, 1);
+            }
+        </script>
+        <!--// Meta tag Keywords -->
+        <!-- css files -->
+        <link rel="stylesheet" href="{{STATIC_URL}}/css/bootstrap.css" type="text/css" media="all">
+        <!-- Bootstrap-Core-CSS -->
+        <link rel="stylesheet" href="{{STATIC_URL}}/css/font-awesome.css" type="text/css" media="all">
+        <!-- Font-Awesome-Icons-CSS -->
+        <link rel="stylesheet" href="{{STATIC_URL}}/css/owl.carousel.css" type="text/css" media="all" />
+        <!-- Owl-Carousel-CSS -->
+        <link rel="stylesheet" href="{{STATIC_URL}}/css/style.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="{{STATIC_URL}}/css/my.css" type="text/css" media="all" />
+        <!-- Style-CSS -->
+        <!-- //css files -->
+        <!-- web fonts -->
+        <link href="http://fonts.googleapis.com/css?family=Molle:400i&amp;subset=latin-ext" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext"
+            rel="stylesheet">
+        <style>            
+            body {background-color: rgb(255, 255, 255);font-family:"方正兵马俑体 简",Times,serif;}
+            bingma {font-family:"方正兵马俑体 简",Times,serif; font-size:100pt}
+        </style>
+        <!-- //web fonts -->
+    </head>
+
+
+<body>
+    <div style="align:center; height:50px; font-size:15px; text-align: center;line-height:50px">
+        <a style = "float:left; border:0px solid #A12426; color:#000000" href={% url 'movieList' 1 %}> 返回主页</a >
+            <a style = "float:right; border:0px solid rgb(0, 0, 0);color:#000000" href={% url 'actorList' 1 %}> 演员列表页</a >
+    </div>
+
+
+    <br/><br/><br/><br/><br/>
+
+    <h1 >
+        <a style="color:rgb(30, 0, 68); font-family: '方正兵马俑体 简'; font-size:10pt; text-align: center;" href={% url 'hoogle' %}>
+            <img class="logo-img center-block" src="{{STATIC_URL}}/hoogle.png" width="575" height="225px" alt="" />
+        </a>
+    </h1>
+
+    <div style="width: 100vw;border: 0px solid green; padding: 25px;; align:center; height:auto; font-size:25px">
+        <form align = "center" action="/search-movies" method="post" font-size="50px">
+            {% csrf_token %}
+            <label><input name="SStype" type="radio" value="movie" />搜电影 </label>
+                <label><input name="SStype" type="radio" value="actor" />搜演员 </label>
+                    <label><input name="SStype" type="radio" value="comment" />搜影评</label>
+            <input style="width:500px; height:50px; border-radius: 25px; display:inline" type="text" maxlength="20" name="q">
+            <input type="submit" value="hoogle一下，你就知道">
+        </form>
+    </div>
+</body>
+
+
+</html>

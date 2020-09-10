@@ -1,0 +1,67 @@
+{
+    "name": "\u857e\u514b\u00b7\u8d1d\u5c14 Lake Bell",
+    "movies": [
+        "\u7231\u5ba0\u5927\u673a\u5bc6 The Secret Life of Pets"
+    ],
+    "male": "\u5973",
+    "xingzuo": "\u767d\u7f8a\u5ea7",
+    "birth": "1979-03-24",
+    "area": "\u7f8e\u56fd,\u7ebd\u7ea6",
+    "zhiye": [
+        "\u6f14\u5458",
+        "\u914d\u97f3",
+        "\u5bfc\u6f14",
+        "\u7f16\u5267"
+    ],
+    "moreName": [
+        "\u94c3\u6e56\u6e56"
+    ],
+    "family": [
+        "Harvey Siegel(\u7236)",
+        "Robin Bell(\u6bcd)",
+        "Scott Campbell(\u592b)"
+    ],
+    "intro": "\n            \u3000\u3000\u857e\u514b\u00b7\u8d1d\u5c14\uff0c\u7f8e\u56fd\u6f14\u5458\uff0c\u66fe\u51fa\u6f14\u300a\u6ce2\u58eb\u987f\u6cd5\u5f8b\u300b\u300a\u5f8b\u5e08\u672c\u8272\u300b\u300a\u6025\u8bca\u5ba4\u7684\u6545\u4e8b\u300b\u7b49\u5f71\u89c6\u5267\u3002\n    ",
+    "hezuo": [
+        [
+            "\u9c8d\u6bd4\u00b7\u83ab\u5c3c\u6c49 Bobby Moynihan",
+            1
+        ],
+        [
+            "\u53f2\u8482\u592b\u00b7\u5e93\u6839 Steve Coogan",
+            1
+        ],
+        [
+            "\u8def\u6613\u00b7C\u00b7K Louis C.K.",
+            1
+        ],
+        [
+            "\u827e\u745e\u514b\u00b7\u65af\u901a\u65af\u5d14\u7279 Eric Stonestreet",
+            1
+        ],
+        [
+            "\u51ef\u6587\u00b7\u54c8\u7279 Kevin Hart",
+            1
+        ],
+        [
+            "\u827e\u4f2f\u7279\u00b7\u5e03\u9c81\u514b\u65af Albert Brooks",
+            1
+        ],
+        [
+            "\u8fbe\u7eb3\u00b7\u5361\u7ef4 Dana Carvey",
+            1
+        ],
+        [
+            "\u6c49\u5c3c\u62d4\u00b7\u5e03\u52d2\u65af Hannibal Buress",
+            1
+        ],
+        [
+            "\u827e\u4e3d\u00b7\u574e\u4f2f\u5c14 Ellie Kemper",
+            1
+        ],
+        [
+            "\u8096\u592e Yang Xiao",
+            0
+        ]
+    ]
+}

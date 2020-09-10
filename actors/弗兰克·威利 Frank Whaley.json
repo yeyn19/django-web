@@ -1,0 +1,60 @@
+{
+    "name": "\u5f17\u5170\u514b\u00b7\u5a01\u5229 Frank Whaley",
+    "movies": [
+        "\u4f4e\u4fd7\u5c0f\u8bf4 Pulp Fiction"
+    ],
+    "male": "\u7537",
+    "xingzuo": "\u5de8\u87f9\u5ea7",
+    "birth": "1963-07-20",
+    "area": "\u7f8e\u56fd,\u7ebd\u7ea6,\u96ea\u57ce",
+    "zhiye": [
+        "\u6f14\u5458",
+        "\u5bfc\u6f14",
+        "\u7f16\u5267"
+    ],
+    "moreName": [],
+    "family": [],
+    "intro": "\n            \u3000\u3000\n    ",
+    "hezuo": [
+        [
+            "\u83f2\u5c14\u00b7\u62c9\u9a6c Phil LaMarr",
+            1
+        ],
+        [
+            "\u963f\u66fc\u8fbe\u00b7\u666e\u62c9\u83ab Amanda Plummer",
+            1
+        ],
+        [
+            "\u5e03\u9c81\u65af\u00b7\u5a01\u5229\u65af Bruce Willis",
+            1
+        ],
+        [
+            "\u6587\u00b7\u745e\u59c6\u65af Ving Rhames",
+            1
+        ],
+        [
+            "\u8482\u59c6\u00b7\u7f57\u65af Tim Roth",
+            1
+        ],
+        [
+            "\u4e4c\u739b\u00b7\u745f\u66fc Uma Thurman",
+            1
+        ],
+        [
+            "\u7ea6\u7ff0\u00b7\u7279\u62c9\u6c83\u5c14\u5854 John Travolta",
+            1
+        ],
+        [
+            "\u585e\u7f2a\u5c14\u00b7\u6770\u514b\u900a Samuel L. Jackson",
+            1
+        ],
+        [
+            "\u5e03\u5c14\u00b7\u65af\u8482\u5c14\u65af Burr Steers",
+            1
+        ],
+        [
+            "\u8096\u592e Yang Xiao",
+            0
+        ]
+    ]
+}

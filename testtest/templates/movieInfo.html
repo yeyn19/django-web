@@ -1,0 +1,199 @@
+{% load static %}
+{% load my_tags %}
+
+<html>
+    <meta charset="utf-8">
+
+    <head>
+        <title>电影详情:{{name}}</title>
+        <!-- Meta tag Keywords -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8" />
+        <meta name="keywords" content=""
+        />
+        <script>
+            addEventListener("load", function () {
+                setTimeout(hideURLbar, 0);
+            }, false);
+    
+            function hideURLbar() {
+                window.scrollTo(0, 1);
+            }
+        </script>
+        <!--// Meta tag Keywords -->
+        <!-- css files -->
+        <link rel="stylesheet" href="{{STATIC_URL}}/css/bootstrap.css" type="text/css" media="all">
+        <!-- Bootstrap-Core-CSS -->
+        <link rel="stylesheet" href="{{STATIC_URL}}/css/font-awesome.css" type="text/css" media="all">
+        <!-- Font-Awesome-Icons-CSS -->
+        <link rel="stylesheet" href="{{STATIC_URL}}/css/owl.carousel.css" type="text/css" media="all" />
+        <!-- Owl-Carousel-CSS -->
+        <link rel="stylesheet" href="{{STATIC_URL}}/css/style.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="{{STATIC_URL}}/css/my.css" type="text/css" media="all" />
+        <!-- Style-CSS -->
+        <!-- //css files -->
+        <!-- web fonts -->
+        <link href="http://fonts.googleapis.com/css?family=Molle:400i&amp;subset=latin-ext" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext"
+            rel="stylesheet">
+        <style type='text/css'>  
+        .content {
+            color: #000000;
+            font-size: 40px;
+        }
+        .bg {
+            background: url("{{STATIC_URL}}/moviephotos/{{name}}.jpg");
+            height:5000px;
+            text-align: center;
+            line-height: 100px;
+        }
+        .bg-blur {
+            float: left;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            -webkit-filter: blur(15px);
+            -moz-filter: blur(15px);
+            -o-filter: blur(15px);
+            -ms-filter: blur(15px);
+            filter: blur(35px);
+            overflow: hidden;
+        }
+        .content-front {
+          position:absolute;
+          left: 10px;
+          right: 10px;
+          height:600px;
+          line-height: 50px;
+          text-align: center;
+        }
+
+          
+            /*body {background:url("{{STATIC_URL}}/moviephotos/{{name}}.jpg") no-repeat;background-size:100% 100%;font-family:"方正兵马俑体 简",Times,serif;}*/
+            bingma {font-family:"方正兵马俑体 简",Times,serif; font-size:100pt}
+        </style>
+        <!-- //web fonts -->
+    </head>
+
+    <body>
+        <div>
+        <!--<div style="background:'{{STATIC_URL}}/moviephotos/{{name}}.jpg' no-repeat;background-size:100% 100%;">-->
+        <div class="bg bg-blur" ></div>
+        <div class="content content-front">
+		<div style="background:#545652; border: 0px solid green;; align:center; height:100px; font-size:25px; text-align: center;line-height:100px">
+			<a style = "border:0px solid #A12426; color:#D5D5D5" href={% url 'movieList' 1 %}> 电影列表页</a >
+				---------------
+				<a style = "border:0px solid rgb(0, 0, 0);color:#D5D5D5" href={% url 'actorList' 1 %}> 演员列表页</a >
+				<a style=" float:left; color:rgb(30, 0, 68); font-family: '方正兵马俑体 简'; font-size:10pt; text-align: center;" href={% url 'hoogle' %}>
+					<img class="logo-img center-block" src="{{STATIC_URL}}/hoogle.png" height="100px" alt="" />
+				</a>
+		</div>
+
+		<br/><br/><br/><br/>
+
+
+        <!--<h1 >{{ name }}</h1>*/-->
+        <div style="background-color:rgb(74, 168, 206);width: 900px;border: 0px solid green; padding: 25px; margin: 0 auto; height:150px;line-height:50px">
+        <p style="color:rgb(30, 0, 68); font-family: '方正兵马俑体 简'; font-size:50pt; text-align: center;"> {{ name}} <br/><br/><br/></p>
+        </div>
+        <div style="background-color:rgb(74, 168, 206);width: 900px;border: 5px solid green; padding: 0px; margin: 0 auto; height:10px;line-height:50px"></div>
+        <!--<h1>{{ photos }}</h1>-->
+        <!--<h1>{{STATIC_URL}}moviephotos/{{name}}.jpg</h1>-->
+        <div style="background-color:rgb(74, 168, 206);width: 900px;border: 0px solid green; padding: 25px; margin: 0 auto; align:center; height:500px">
+            <img  style="width:280; height:400;  float:left; clear:left;overflow: hidden;" src= "{{STATIC_URL}}/moviephotos/{{name}}.jpg" >
+            <p style="color:black;float:right; clear:right; width:50%;font-family: '方正兵马俑体 简'; font-size:15pt; ">  导演：{{director}}</p>
+            <p style="color:black;float:right; clear:right; width:50%;font-family: '方正兵马俑体 简'; font-size:15pt; ">  编剧：{{bianju}}</p>
+            <p style="color:black;float:right; clear:right; width:50%;font-family: '方正兵马俑体 简'; font-size:15pt; ">  类型：
+                {% for i in select %}
+                    {{forloop.counter}}、{{i }}    
+                {% empty %}
+                    垃圾电影不好分类
+                {% endfor %}
+            </p>
+            <p style="color:black;float:right; clear:right; width:50%;font-family: '方正兵马俑体 简'; font-size:15pt; ">  地区：
+                {% for i in area %}
+                    {{forloop.counter}}、{{i }}    
+                {% empty %}
+                    垃圾电影谁都不愿意拍
+                {% endfor %}
+            </p>
+            <p style="color:black;float:right; clear:right; width:50%;font-family: '方正兵马俑体 简'; font-size:15pt; ">  语言：
+                {% for i in lang %}
+                    {{forloop.counter}}、{{i }} 
+                {% empty %}
+                    垃圾电影听不懂是什么语   
+                {% endfor %}
+            </p>         
+            <p style="color:black;float:right; clear:right; width:50%;font-family: '方正兵马俑体 简'; font-size:15pt; ">  片长：{{length}}</p>
+            <p style="color:black;float:right; clear:right; width:50%;font-family: '方正兵马俑体 简'; font-size:15pt; ">  上映日期：{{year}}</p>
+            <p style="color:black;float:right; clear:right; width:50%;font-family: '方正兵马俑体 简'; font-size:15pt; ">  得分：{{average}}</p>
+            <p style="color:black;float:right; clear:right; width:50%;font-family: '方正兵马俑体 简'; font-size:15pt; ">  打分人数：{{averageNum}}人</p>
+        </div>
+
+
+        <br />
+        <div><p style="clear:left;align:center; color:rgb(30, 0, 68); font-family: '方正兵马俑体 简'; font-size:25pt; text-align: center;"> 影片简介 </p></div>
+        <br />
+        <h1>
+
+
+        <div style="background-color:rgb(74, 168, 206);width: 1000px;border: 25px solid green; padding: 25px; margin: 0 auto; align:center; height:auto">
+            <p style="color:black;font-family: '方正兵马俑体 简'; font-size:15pt; "> {{intro}} </p>
+        </div>
+
+        <br />
+        <div><p style="clear:left;align:center; color:rgb(30, 0, 68); font-family: '方正兵马俑体 简'; font-size:25pt; text-align: center;"> 演职人员表 </p></div>
+        <br />
+
+        <div style="background-color:rgb(74, 168, 206);width: 1000px;border: 25px solid green; padding: 25px; margin: 0 auto; align:center; height:auto">
+        <table align="center">
+            <tr>
+        {% for i in actors %}
+            {% ifequal forloop.counter0 5 %}
+                </tr>
+                <tr>
+                <td>
+                    <div style="width: 150px;border: 0px solid green; padding: 25px; margin: 0 auto; align:center; height:300px">
+                        <a href={% url 'actors' i %}>
+                            <img class="logo-img center-block" src="{{STATIC_URL}}/actorphotos/{{i}}.jpg" alt="" width="125" height="200"> {{i}}
+                        </a>
+                        </div>
+                </td>
+            {% else %}
+                <td>
+                    <div style="width: 150px;border: 0px solid green; padding: 25px; margin: 0 auto; align:center; height:300px">
+                    <a href={% url 'actors' i %}>
+                        <img class="logo-img center-block" src="{{STATIC_URL}}/actorphotos/{{i}}.jpg" alt="" width="125" height="200"> {{i}}
+                    </a>
+                    </div>
+                </td>
+            {% endifequal %}
+        {% endfor %}
+        </tr>
+        </table>
+        </div>
+
+        <br />
+        <div><p style="clear:left;align:center; color:rgb(30, 0, 68); font-family: '方正兵马俑体 简'; font-size:25pt; text-align: center;"> 影评 </p>
+        </div>        
+        <br />
+        <div style="background-color:rgb(74, 168, 206);width: 1000px;border: 25px solid green; padding: 25px; margin: 0 auto; align:center; height:auto">
+            <p style="color:black;font-family: '方正兵马俑体 简'; font-size:15pt; "> 
+                {% for i in comments%}
+                    {{forloop.counter}}、{{i}}
+                    <br />
+                    <br />
+                {% empty %}
+                    垃圾电影连影评都找不到
+                {% endfor %}
+            </p>
+        </div>
+    </div>
+        </div>
+
+        </h1>
+    </div>
+    </body>
+    </html>

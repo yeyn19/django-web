@@ -1,0 +1,65 @@
+{
+    "name": "LL Cool J",
+    "movies": [
+        "\u9739\u96f3\u5a07\u5a03 Charlie's Angels"
+    ],
+    "male": "\u7537",
+    "xingzuo": "\u6469\u7faf\u5ea7",
+    "birth": "1968-01-14",
+    "area": "\u7f8e\u56fd,\u7ebd\u7ea6,\u957f\u5c9b,\u6e7e\u5cb8",
+    "zhiye": [
+        "\u6f14\u5458",
+        "\u5236\u7247\u4eba",
+        "\u4e3b\u6301\u4eba",
+        "\u7f16\u5267"
+    ],
+    "moreName": [
+        "LL\u9177\u6770"
+    ],
+    "family": [
+        "Simone Smith\uff08\u59bb\uff09"
+    ],
+    "intro": "\n            \u3000\u3000James Todd Smith, better known by his stage name LL Cool J, is an American rapper, record producer, actor, author, and entrepreneur from Queens, New York. With the breakthrough success of his hit single \"I Need a Beat\" and the Radio LP, LL Cool J became an early hip-hop act to achieve mainstream success along with Kurtis Blow and Run-D.M.C.\n    ",
+    "hezuo": [
+        [
+            "\u9a6c\u7279\u00b7\u52d2\u5e03\u6717 Matt LeBlanc",
+            1
+        ],
+        [
+            "\u6bd4\u5c14\u00b7\u9ed8\u745e Bill Murray",
+            1
+        ],
+        [
+            "\u514b\u91cc\u65af\u5e73\u00b7\u683c\u6d1b\u5f17 Crispin Glover",
+            1
+        ],
+        [
+            "\u51ef\u8389\u00b7\u6797\u5947 Kelly Lynch",
+            1
+        ],
+        [
+            "\u5361\u6885\u9686\u00b7\u8fea\u4e9a\u5179 Cameron Diaz",
+            1
+        ],
+        [
+            "\u5c71\u59c6\u00b7\u6d1b\u514b\u5a01\u5c14 Sam Rockwell",
+            1
+        ],
+        [
+            "\u5218\u7389\u73b2 Lucy Liu",
+            1
+        ],
+        [
+            "\u5fb7\u9c81\u00b7\u5df4\u91cc\u6469\u5c14 Drew Barrymore",
+            1
+        ],
+        [
+            "\u8482\u59c6\u00b7\u514b\u91cc Tim Curry",
+            1
+        ],
+        [
+            "\u8096\u592e Yang Xiao",
+            0
+        ]
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "name": "\u5218\u7ef4 Wei Liu",
+    "movies": [
+        "\u4e00\u591c\u60ca\u559c"
+    ],
+    "male": "\u7537",
+    "xingzuo": "\u5904\u5973\u5ea7",
+    "birth": "1986-08-31",
+    "area": "\u4e2d\u56fd,\u8fbd\u5b81,\u978d\u5c71",
+    "zhiye": [
+        "\u6f14\u5458",
+        "\u7f16\u5267"
+    ],
+    "moreName": [
+        "\u5218\u664f\u8fb0"
+    ],
+    "family": [],
+    "intro": "\n            \u3000\u3000\u5218\u664f\u8fb0\uff0c\u4e2d\u56fd\u5927\u9646\u7537\u827a\u4eba\u3002\u6bd5\u4e1a\u4e8e\u6c88\u9633\u97f3\u4e50\u5b66\u9662\u5f71\u89c6\u8868\u6f14\u7cfb\uff0c\u4e8e2005\u83b7\u5f97\u5e74\u5ea6\u83b1\u5361\u6211\u578b\u6211\u79c0\u603b\u51a0\u519b\uff0c\u4ee3\u8868\u4f5c\u5355\u66f2\u300a \u5feb\u4e50\u662f\u3002\u3002.\u300b\u30022010\u5e74\u51fa\u6f14\u7535\u5f71\u300a\u6b4c\u821e\u9752\u6625\u300b\uff0c2012\u5e74\u51fa\u6f14\u7535\u89c6\u5267\u300a\u6797\u5e08\u5085\u5728\u9996\u5c14\u300b\u6734\u4fca\u7537\u4e00\u89d2\u3002\n    ",
+    "hezuo": [
+        [
+            "\u9ece\u660e Leon Lai",
+            1
+        ],
+        [
+            "\u502a\u8679\u6d01 Hongjie Ni",
+            1
+        ],
+        [
+            "\u4e39\u5c3c\u5c14\u00b7\u6d77\u5c3c Daniel Henney",
+            1
+        ],
+        [
+            "\u5434\u4f69\u6148 Pace Wu",
+            1
+        ],
+        [
+            "\u8303\u51b0\u51b0 Bingbing Fan",
+            1
+        ],
+        [
+            "\u674e\u6cbb\u5ef7 Aarif Lee",
+            1
+        ],
+        [
+            "\u5f90\u5ce5 Zheng Xu",
+            1
+        ],
+        [
+            "\u9ec4\u4e00\u98de Yut Fei Wong",
+            1
+        ],
+        [
+            "\u848b\u52b2\u592b Jinfu Jiang",
+            1
+        ],
+        [
+            "\u8096\u592e Yang Xiao",
+            0
+        ]
+    ]
+}

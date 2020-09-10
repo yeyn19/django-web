@@ -1,0 +1,170 @@
+<html>
+    <meta charset="utf-8">
+
+    <head>
+        <title>演员详情:{{name}}</title>
+        <!-- Meta tag Keywords -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8" />
+        <meta name="keywords" content=""
+        />
+        <script>
+            addEventListener("load", function () {
+                setTimeout(hideURLbar, 0);
+            }, false);
+    
+            function hideURLbar() {
+                window.scrollTo(0, 1);
+            }
+        </script>
+        <!--// Meta tag Keywords -->
+        <!-- css files -->
+        <link rel="stylesheet" href="{{STATIC_URL}}/css/bootstrap.css" type="text/css" media="all">
+        <!-- Bootstrap-Core-CSS -->
+        <link rel="stylesheet" href="{{STATIC_URL}}/css/font-awesome.css" type="text/css" media="all">
+        <!-- Font-Awesome-Icons-CSS -->
+        <link rel="stylesheet" href="{{STATIC_URL}}/css/owl.carousel.css" type="text/css" media="all" />
+        <!-- Owl-Carousel-CSS -->
+        <link rel="stylesheet" href="{{STATIC_URL}}/css/style.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="{{STATIC_URL}}/css/my.css" type="text/css" media="all" />
+        <!-- Style-CSS -->
+        <!-- //css files -->
+        <!-- web fonts -->
+        <link href="http://fonts.googleapis.com/css?family=Molle:400i&amp;subset=latin-ext" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext"
+            rel="stylesheet">
+        <style>            
+            body {background-color: rgb(165, 214, 167);font-family:"方正兵马俑体 简",Times,serif;}
+            bingma {font-family:"方正兵马俑体 简",Times,serif; font-size:100pt}
+        </style>
+        <!-- //web fonts -->
+    </head>
+
+    <body>
+		<div style="background:#545652; border: 0px solid green;; align:center; height:100px; font-size:25px; text-align: center;line-height:100px">
+			<a style = "border:0px solid #A12426; color:#D5D5D5" href={% url 'movieList' 1 %}> 电影列表页</a >
+				---------------
+				<a style = "border:0px solid rgb(0, 0, 0);color:#D5D5D5" href={% url 'actorList' 1 %}> 演员列表页</a >
+				<a style=" float:left; color:rgb(30, 0, 68); font-family: '方正兵马俑体 简'; font-size:10pt; text-align: center;" href={% url 'hoogle' %}>
+					<img class="logo-img center-block" src="{{STATIC_URL}}/hoogle.png" height="100px" alt="" />
+				</a>
+		</div>
+
+		<br/><br/><br/><br/>
+	
+
+
+        <!--<h1 >{{ name }}</h1>*/-->
+        <p style="color:rgb(30, 0, 68); font-family: '方正兵马俑体 简'; font-size:50pt; text-align: center;"> {{ name}} </p>
+        <!--<h1>{{ photos }}</h1>-->
+        <!--<h1>{{STATIC_URL}}moviephotos/{{name}}.jpg</h1>-->
+        <div style="width: 900px;border: 25px solid green; padding: 25px; margin: 0 auto; align:center; height:500px">
+            <img  style="width:280; height:400;  float:left; clear:left;overflow: hidden;" src= "{{STATIC_URL}}/actorphotos/{{name}}.jpg" >
+            <p style="color:black;float:right; clear:right; width:50%;font-family: '方正兵马俑体 简'; font-size:15pt; ">  性别：{{male}}</p>
+            <p style="color:black;float:right; clear:right; width:50%;font-family: '方正兵马俑体 简'; font-size:15pt; ">  星座：{{xingzuo}}</p>
+            <p style="color:black;float:right; clear:right; width:50%;font-family: '方正兵马俑体 简'; font-size:15pt; ">  出生日期：{{birth}}</p>
+            <p style="color:black;float:right; clear:right; width:50%;font-family: '方正兵马俑体 简'; font-size:15pt; ">  地区：{{area}}</p>
+            <p style="color:black;float:right; clear:right; width:50%;font-family: '方正兵马俑体 简'; font-size:15pt; ">  别名：
+                {% for i in moreName %}
+                    {{forloop.counter}}、{{i }}  
+                {% empty %}
+                    阴间演员只有这个称呼哦  
+                {% endfor %}
+            </p>
+            <p style="color:black;float:right; clear:right; width:50%;font-family: '方正兵马俑体 简'; font-size:15pt; ">  职业：
+                {% for i in zhiye %}
+                    {{forloop.counter}}、{{i }}    
+                {% empty %}
+                    阴间演员不务正业哦                     
+                {% endfor %}
+            </p>
+            <p style="color:black;float:right; clear:right; width:50%;font-family: '方正兵马俑体 简'; font-size:15pt; ">  家庭成员：
+                {% for i in family %}
+                    {{forloop.counter}}、{{i }}    
+                {% empty %}
+                    阴间演员找不到家庭成员哦 
+                {% endfor %}
+            </p>    
+        </div>
+
+
+
+        <br />
+        <div><p style="clear:left;align:center; color:rgb(30, 0, 68); font-family: '方正兵马俑体 简'; font-size:25pt; text-align: center;"> 个人简介 </p></div>
+        <br />
+        <h1>
+
+
+        <div style="width: 1000px;border: 25px solid green; padding: 25px; margin: 0 auto; align:center; height:auto">
+            <p style="color:black;font-family: '方正兵马俑体 简'; font-size:15pt; "> {{intro}} </p>
+        </div>
+
+        <br />
+        <div><p style="clear:left;align:center; color:rgb(30, 0, 68); font-family: '方正兵马俑体 简'; font-size:25pt; text-align: center;"> 出演电影 </p></div>
+        <br />
+
+        <div style="width: 1000px;border: 25px solid green; padding: 25px; margin: 0 auto; align:center; height:auto">
+        <table align="center">
+            <tr>
+        {% for i in paint %}
+            {% ifequal i.cc 1 %}
+                </tr>
+                <tr>
+                <td>
+                    <div style="width: 150px;border: 0px solid green; padding: 25px; margin: 0 auto; align:center; height:300px">
+                    <a href={% url 'movies' i.nn %}>
+                        <img class="logo-img center-block" src="{{STATIC_URL}}/moviephotos/{{i.nn}}.jpg" alt="" width="125" height="200"> {{i.nn}}
+                    </a>
+                    </div>
+                </td>
+            {% else %}
+                <td>
+                    <div style="width: 150px;border: 0px solid green; padding: 25px; margin: 0 auto; align:center; height:300px">
+                        <a href={% url 'movies' i.nn %}>
+                            <img class="logo-img center-block" src="{{STATIC_URL}}/moviephotos/{{i.nn}}.jpg" alt="" width="125" height="200"> {{i.nn}}
+                        </a>
+                        </div>
+                </td>
+            {% endifequal %}
+        {% endfor %}
+        </tr>
+        </table>
+        </div>
+
+
+        <br />
+        <div><p style="clear:left;align:center; color:rgb(30, 0, 68); font-family: '方正兵马俑体 简'; font-size:25pt; text-align: center;"> 合作演员 </p></div>
+        <br />
+
+        <div style="width: 1200px;border: 25px solid green; padding: 25px; margin: 0 auto; align:center; height:auto">
+        <table align="center">
+            <tr>
+        {% for i in temp %}
+            {% ifequal forloop.counter0 5 %}
+                </tr>
+                <tr>
+                <td>
+                    <div style="width: 200px;border: 0px solid green; padding: 25px; margin: 0 auto; align:center; height:300px">
+                    <a href={% url 'actors' i.nn %}>
+                        <img class="logo-img center-block" src="{{STATIC_URL}}/actorphotos/{{i.nn}}.jpg" alt="" width="125" height="200"> {{i.nn}}: {{i.cc}}部
+                    </a>
+                    </div>
+                </td>
+            {% else %}
+                <td>
+                    <div style="width: 200px;border: 0px solid green; padding: 25px; margin: 0 auto; align:center; height:300px">
+                        <a href={% url 'actors' i.nn %}>
+                            <img class="logo-img center-block" src="{{STATIC_URL}}/actorphotos/{{i.nn}}.jpg" alt="" width="125" height="200"> {{i.nn}}: {{i.cc}}部
+                        </a>
+                        </div>
+                </td>
+            {% endifequal %}
+        {% endfor %}
+        </tr>
+        </table>
+        </div>
+        </h1>
+
+    </body>
+    </html>

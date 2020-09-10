@@ -1,0 +1,11 @@
+<script async>
+    function highlight() {
+        const lst = document.querySelectorAll(".to-highlight");
+        const string = "{{ name }}";
+        const replacement = "<span style='color: red';font-family: '方正兵马俑体 简'; font-size:80px;>" + string + "</span>"
+        for (let i = 0; i < lst.length; ++i) {
+            let operated_str = lst[i].innerHTML.split(string).join(replacement);
+            lst[i].innerHTML = operated_str;
+        }
+    }
+</script>
